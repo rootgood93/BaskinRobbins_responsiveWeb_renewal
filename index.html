@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0, user-scalable=yes, target-densitydpi=medium-dpi" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js"
+        integrity="sha512-BkBgWiL0N/EFIbLZYGTgbksKG5bS6PtwnWvVk3gccv+KhtK/4wkLxCRGh+kelKiXx7Ey4jfTabLg3AEIPC7ENA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/common.js"></script>
+    <title>배스킨라빈스 리뉴얼 이근선</title>
+</head>
+
+<body>
+    <section class="top_pop">
+        <div class="layout">
+            <h4>Baskin Robbins <br class="m_show"><span class="gs_b">이달의 맛 이벤트</span></h4>
+            <button>X</button>
+        </div>
+    </section>
+    <header>
+        <div class="layout">
+            <div class="flex_box hd_box">
+                <h1 class="logo"><a href="#"><img src="./images/logo.png" alt="배스킨라빈스 로고"></a></h1>
+                <div>
+                    <nav class="member pc_show">
+                        <ul class="flex_box">
+                            <li><a href="#" class="c_logo">LOGIN</a></li>
+                            <li><a href="#">JOIN</a></li>
+                        </ul>
+                    </nav>
+                    <nav class="gnb pc_show">
+                        <ul class="flex_box">
+                            <li><a href="#">FLAVOR OF THE MONTH</a></li>
+                            <li><a href="#">MENU</a></li>
+                            <li><a href="#">영양성분 및 알레르기</a></li>
+                            <li><a href="#">EVENT</a></li>
+                            <li><a href="#">STORE</a></li>
+                            <li><a href="#">ABOUT</a></li>
+                        </ul>
+                    </nav>
+                    <button class="ham_btn m_show"><i class="fa-solid fa-bars"></i></button>
+                </div>
+            </div>
+            <!-- .hd_box -->
+        </div>
+    </header>
+    <section class="main_visual">
+        <div class="layout">
+            <div class="flex_box visual_box">
+                <div class="img_box">
+                    <style>
+                        /* 이미지 슬라이드 배너 완성되면 style 태그 삭제 */
+                        .slide li {
+                            width: 100%;
+                            height: 100%;
+                        }
+
+                        .slide li span {
+                            position: absolute;
+                            z-index: 100;
+                            left: 5%;
+                            top: 5%;
+                            font-weight: 900;
+                            font-size: 2rem;
+                        }
+
+                        .slide li a {
+                            width: 100%;
+                            height: 100%;
+                            display: block;
+                            z-index: 99999;
+                        }
+
+                        .slide li a.a2 {
+                            background-color: red;
+                            /* color: red; */
+                        }
+
+                        .slide li a.a3 {
+                            background-color: green;
+                        }
+
+                        .slide li a.a4 {
+                            background-color: purple;
+                        }
+
+                        .slide li a.a5 {
+                            background-color: orange;
+                        }
+                    </style>
+                    <ul class="slide">
+                        <li class="on"><span>1</span><a href="#"><img src="./images/main_sl1.jpg" alt="이달의 맛 이벤트"></a>
+                        </li>
+                        <li><span>2</span><a href="#" class="a2"></a></li>
+                        <li><span>3</span><a href="#" class="a3"></a></li>
+                        <li><span>4</span><a href="#" class="a4"></a></li>
+                        <li><span>5</span><a href="#" class="a5"></a></li>
+                    </ul>
+                </div>
+                <div class="sum_box">
+                    <h5 class="on">이달의 맛 소개</h5>
+                    <h5>베스킨라빈스 특별한 제휴 혜택</h5>
+                    <h5>싱글레귤러 최대 50% 적립</h5>
+                    <h5>Mpoint 50% 사용</h5>
+                    <h5>포켓몬 제품 구매 시 스터커 100원</h5>
+                </div>
+            </div>
+            <!-- .flex_box -->
+            <div class="dot_con m_show">
+                <span class="dot1 on">1</span>
+                <span class="dot2">2</span>
+                <span class="dot3">3</span>
+                <span class="dot4">4</span>
+                <span class="dot5">5</span>
+            </div>
+        </div>
+    </section>
+    <!-- .main_visual -->
+    <section class="info">
+        <div class="layout">
+            <div class="flex_box info_con">
+                <div>
+                    <h3 class="gs_b">EVENT</h3>
+                    <p class="ta_show">배스킨라빈스와 함께 하는 다양한 혜택과 이벤트 안내</p>
+                    <ul class="icon_list flex_box">
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-gift"></i>
+                                <p>진행 중 이벤트</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-bullhorn"></i>
+                                <p>당첨자 발표</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="gs_b">ABOUT</h3>
+                    <p class="ta_show">베스킨라빈스에 방문해 주셔서 진심으로 감사드립니다.</p>
+                    <ul class="icon_list flex_box">
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>CONTACT<br class="m_show"> US</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-store"></i>
+                                <p>점포개설<br class="m_show"> 문의</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-person-dots-from-line"></i>
+                                <p>영양성분 및<br class="m_show"> 알레르기</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- .flex_box -->
+        </div>
+    </section>
+    <!-- .info -->
+    <section class="menu">
+        <div class="layout">
+            <h2 class="gs_b">MENU</h2>
+            <p class="sub_tit">다양한 종류의 상품을 보고 고르실 수 있습니다!</p>
+            <div class="flex_box menu_con">
+                <div class="white_box big">
+                    <a href="#">
+                        <h3>ICE CREAM</h3>
+                    </a>
+                    <ul class="flex_box">
+                        <li>
+                            <span class="point">이달의 맛</span>
+                            <img src="./images/icecream_01.png" alt="이달의 맛 아이스크림">
+                            <p>사랑에 빠진 외계인</p>
+                        </li>
+                        <li>
+                            <span class="point">BEST 1</span>
+                            <img src="./images/icecream_02.png" alt="BEST 1 아이스크림">
+                            <p>엄마는 외계인</p>
+                        </li>
+                        <li>
+                            <span class="point">BEST 2</span>
+                            <img src="./images/icecream_03.png" alt="BEST 2 아이스크림">
+                            <p>아몬드 봉봉</p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- .big -->
+                <div class="sm_box">
+                    <a class="white_box" href="#">
+                        <h4>ICE CREAM<br>CAKE</h4>
+                        <img src="./images/icecreamCake_01.png" alt="아이스크림 케이크">
+                        <span href="#" class="gs_b c_pink">more +</span>
+                    </a>
+                    <a class="white_box" href="#">
+                        <h4>BEVERAGE</h4>
+                        <img src="./images/beverage_01.png" alt="음료">
+                        <span class="gs_b c_orange">more +</span>
+                    </a>
+                    <a class="white_box" href="#">
+                        <h4>COFFEE</h4>
+                        <img src="./images/coffee_01.png" alt="커피">
+                        <span href="#" class="gs_b c_orange">more +</span>
+                    </a>
+                    <a class="white_box" href="#">
+                        <h4>DESSERT</h4>
+                        <img src="./images/dessert_01.png" alt="디저트">
+                        <span class="gs_b c_pink">more +</span>
+                    </a>
+                </div>
+                <!-- sm_box -->
+            </div>
+        </div>
+    </section>
+    <!-- .menu -->
+    <section class="delivery">
+        <div class="layout">
+            <h2 class="gs_b">DELIVERY &amp; STORE</h2>
+            <div class="w1300 flex_box deli_con">
+                <div>
+                    <h4 class="gs_b"><i class="fa-solid fa-phone c_pink"></i> 배달 콜센터</h4>
+                    <h5 class="tel c_pink gs_b">1670-3131</h5>
+                    <p class="sub_tit">전화로 주문하시면 배달해드립니다!</p>
+                </div>
+                <div>
+                    <h4 class="gs_b"><i class="fa-solid fa-mobile-screen-button c_darkOr"></i> 모바일 APP</h4>
+                    <p class="sub_tit">모바일 APP에서 편리하게 주문해보세요! <span class="gs_l">(※ 기가 지니는 목소리 주문 가능)</span></p>
+                    <ul class="flex_box icon_list">
+                        <li>
+                            <a href="#"></a>
+                            <img src="./images/delivery_happy.jpg" alt="해피오더">
+                            <p>해피오더</p>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                            <img src="./images/delivery_baemin.jpg" alt="배달의 민족">
+                            <p>배달의 민족</p>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                            <img src="./images/delivery_yogiyo.jpg" alt="요기요">
+                            <p>요기요</p>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                            <img src="./images/delivery_katalk.jpg" alt="카카오톡">
+                            <p>카카오톡</p>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                            <img src="./images/delivery_genie.jpg" alt="기가 지니">
+                            <p>기가 지니</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- .w1300 -->
+            <div class="map_bg">
+                <p class="gs_l">BASKIN LOBBINS</p>
+                <h4 class="gs_b">매장 찾기</h4>
+                <form class="input_box">
+                    <input type="text"><i class="fa-solid fa-magnifying-glass"></i>
+                </form>
+                <a href="#">자세히 보기</a>
+            </div>
+        </div>
+    </section>
+    <!-- .delivery -->
+    <section class="video">
+        <div class="layout">
+            <div class="w1300">
+                <h2 class="gs_b">COMMUNITY</h2>
+                <p class="sub_tit">즐거운 일이 가득한 배스킨라빈스와 소통해보세요!</p>
+                <div class="iframe_box">
+                    <iframe width="1300" height="728" src="https://www.youtube.com/embed/o6fmlY9cGcw?autoplay=1&mute=1"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- .video -->
+    <section class="review">
+        <div class="layout">
+            <h2 class="gs_b">REVIEW</h2>
+            <p class="sub_tit">배스킨라빈스의 생생한 인스타그램 후기입니다.</p>
+            <div class="flex_box">
+                <a href="#"><img src="./images/review_01.jpg" alt="리뷰이미지"></a>
+                <a href="#"><img src="./images/review_02.jpg" alt="리뷰이미지"></a>
+                <a href="#"><img src="./images/review_03.jpg" alt="리뷰이미지"></a>
+                <a href="#"><img src="./images/review_04.jpg" alt="리뷰이미지"></a>
+                <a href="#"><img src="./images/review_05.jpg" alt="리뷰이미지"></a>
+                <a href="#" class="m_show"><img src="./images/review_01.jpg" alt="리뷰이미지"></a>
+            </div>
+        </div>
+    </section>
+    <!-- .review -->
+    <footer>
+        <div class="w1300">
+            <nav class="ft_list">
+                <ul class="flex_box">
+                    <li><a href="#">점포개설문의</a></li>
+                    <li><a href="#">채용문의</a></li>
+                    <li><a href="#">윤리신고센터</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">영상정보처리기기운영관리방침</a></li>
+                    <li><a href="#">거래희망회사 사전등록</a></li>
+                </ul>
+            </nav>
+            <div class="flex_box btm">
+                <h1 class="ft_logo logo"><a href="#"><img src="./images/ft_logo.png" alt="로고"></a></h1>
+                <p class="txt">사업자 등록번호 : 303-81-09535 비알코리아(주) 대표이사 도세호 서울특별시 서초구 남부순환로 2620(양재동 11-149번지)
+                    <br>TEL : 080-555-3131 개인정보관리책임자 : 김경우
+                    <br>Copyright ⓒ 2016 BRKOREA Company. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
